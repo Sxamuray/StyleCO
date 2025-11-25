@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleCo | Modern Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar + Hero Section -->
+    <header class="hero position-relative">
+        <!-- Elevated nav uses Bootstrap collapse for responsive behavior -->
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="#home">StyleCo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <a class="btn btn-primary ms-lg-3 mt-3 mt-lg-0" href="#products">Shop Collection</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content: text + hero card pairing -->
+        <section class="container hero-content" id="home">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="eyebrow text-uppercase mb-3">New Season • Limited Drop</p>
+                    <h1 class="display-5 fw-semibold mb-3">Elevate every day style with sustainable essentials.</h1>
+                    <p class="lead text-body-secondary mb-4">
+                        Discover curated pieces designed for comfort, versatility, and planet-friendly living. 
+                        Crafted with organic fabrics and timeless silhouettes.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a class="btn btn-dark btn-lg" href="#products">Browse Products</a>
+                        <a class="btn btn-outline-light btn-lg" href="#stories">View Lookbook</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="hero-card shadow-lg rounded-4 p-4">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80" alt="Featured outfit" class="img-fluid rounded-4 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="mb-1 fw-semibold">Featured Capsule • Atelier Set</p>
+                                <small class="text-body-secondary">Soft neutral palette, recycled cotton</small>
+                            </div>
+                            <span class="badge rounded-pill bg-light text-dark px-3 py-2">$189</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Product Grid Section -->
+        <section class="py-5" id="products">
+            <div class="container">
+                <!-- Centered section heading for consistency -->
+                <div class="section-heading text-center mb-5">
+                    <p class="eyebrow text-uppercase mb-2">Shop the edit</p>
+                    <h2 class="fw-semibold">Bestselling essentials</h2>
+                    <p class="text-body-secondary">Handpicked pieces that move with you—effortless, elevated, and ready for anything.</p>
+                </div>
+                <!-- Responsive card grid via bootstrap columns -->
+                <div class="row g-4">
+                    <article class="col-sm-6 col-lg-3">
+                        <div class="product-card h-100">
+                            <div class="ratio ratio-4x3 product-media">
+                                <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=600&q=80" alt="Minimalist Coat">
+                            </div>
+                            <div class="product-body">
+                                <h3>Minimalist Drape Coat</h3>
+                                <p>Relaxed tailoring meets plush alpaca blend warmth.</p>
+                                <button class="btn btn-primary w-100">Shop Now</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-6 col-lg-3">
+                        <div class="product-card h-100">
+                            <div class="ratio ratio-4x3 product-media">
+                                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Everyday Tote">
+                            </div>
+                            <div class="product-body">
+                                <h3>Everyday Carry Tote</h3>
+                                <p>Water-resistant canvas with smart pockets for daily essentials.</p>
+                                <button class="btn btn-primary w-100">Shop Now</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-6 col-lg-3">
+                        <div class="product-card h-100">
+                            <div class="ratio ratio-4x3 product-media">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Comfort Set">
+                            </div>
+                            <div class="product-body">
+                                <h3>Weekend Knit Set</h3>
+                                <p>Soft ribbed two-piece designed for lounge-to-street ease.</p>
+                                <button class="btn btn-primary w-100">Shop Now</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-6 col-lg-3">
+                        <div class="product-card h-100">
+                            <div class="ratio ratio-4x3 product-media">
+                                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="Sneakers">
+                            </div>
+                            <div class="product-body">
+                                <h3>Atmos Sneaker</h3>
+                                <p>Lightweight knit upper, recycled sole, designed for urban motion.</p>
+                                <button class="btn btn-primary w-100">Shop Now</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Stories Section -->
+        <section class="py-5 bg-body-tertiary" id="stories">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Feature image chosen to reflect Dakar's fashion -->
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded-4 shadow" alt="Senegalese style muse">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="eyebrow text-uppercase mb-2">Behind the brand</p>
+                        <h2 class="fw-semibold mb-3">Thoughtfully made, timeless by design</h2>
+                        <p class="text-body-secondary">
+                            From fiber sourcing to finishing touches, every StyleCo piece champions circular design principles
+                            and mindful production. Join a community that values quality over quantity.
+                        </p>
+                        <ul class="list-unstyled d-grid gap-3 mb-4">
+                            <li class="d-flex align-items-start gap-3">
+                                <span class="badge rounded-pill bg-dark text-light">1</span>
+                                <span>Organic & recycled textiles verified by global sustainability standards.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <span class="badge rounded-pill bg-dark text-light">2</span>
+                                <span>Modular silhouettes that mix, match, and outlast trends.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <span class="badge rounded-pill bg-dark text-light">3</span>
+                                <span>Transparent supply chain with fair-wage partnerships.</span>
+                            </li>
+                        </ul>
+                        <a class="btn btn-dark btn-lg" href="#contact">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer text-white pt-5" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand story blurb for the footer -->
+                <div class="col-md-4">
+                    <h4>StyleCo</h4>
+                    <p>Modern wardrobe staples built for intentional living.</p>
+                    <div class="d-flex gap-3 social-links">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <!-- Physical location details -->
+                <div class="col-md-4">
+                    <h5>Visit</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li>12 Boulevard de la République</li>
+                        <li>Dakar, Senegal 11000</li>
+                        <li>Mon–Sat 10a–7p</li>
+                    </ul>
+                </div>
+                <!-- Newsletter capture -->
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Weekly style briefs, exclusive drops, and early access.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button type="submit" class="btn btn-light w-100 mt-3">Join Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-light-subtle mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between text-white-50 small">
+                <span>© 2025 StyleCo. All rights reserved.</span>
+                <div class="d-flex gap-3">
+                    <a href="#!" class="text-white-50">Privacy</a>
+                    <a href="#!" class="text-white-50">Terms</a>
+                    <a href="#!" class="text-white-50">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
